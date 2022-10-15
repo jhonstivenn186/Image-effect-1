@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Bubbles&display=swap');
+body{
+    margin:0;
+    height:70vh;
+    display:grid;
+    place-items:center;
+    background-color:#db4949;
+  }
+
+  .title{
+    border: #111 solid;
+    text-align: center;
+    font-size: 70px;
+    font-family: 'Rubik Bubbles', cursive;
+    color: rgb(26, 26, 26);
+    background-color: aliceblue;
+    min-width: 100%;
+  }
+
+  .border1{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-radius:10px;
+    border-color: #111;
+    width:460px;
+    position:relative;
+    height:310px;
+    background-color: #111;
+    box-shadow:0 20px 30px rgba(0, 0, 0, 0.479);
+  }
+  
+  .wrapper{
+    width:450px;
+    height:300px;
+    position:relative;
+    border-radius:10px;
+    overflow:hidden;
+
+  }
+  
+  .wrapper img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    position:absolute;
+  }
+  
+  .img2{
+    clip-path:polygon(0 0,50% 0,50% 100%,0 100%);
+  }
+  
+  .slider{
+    -webkit-appearance:none;
+    position:relative;
+    width:calc(100% + 20px);
+    height:100%;
+    background-color:transparent;
+    position:absolute;
+    outline:none;
+    margin-left:-12px;
+  }
+  
+  .slider::-webkit-slider-thumb{
+    -webkit-appearance:none;
+    cursor:e-resize;
+    width:30px;
+    height:30px;
+    border:3px solid #111;
+    border-radius:50%;
+    background-color:rgba(255,255,255,0.6);
+  }
